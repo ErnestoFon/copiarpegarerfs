@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package javaapplication27;
+
+import java.awt.FlowLayout;
+import javax.swing.*;
+
+public class CopiarPegar extends JFrame {
+        private JLabel labelpegar = new JLabel("texto copiado");
+        private JLabel labeltitulo = new JLabel("titulo");
+        private JTextField textcopiar = new JTextField(8);
+        private JButton btncopiar = new JButton("copiar");
+        private JButton btonpegar = new JButton("pegar");
+
+    
+    public CopiarPegar(){
+        setTitle("Copiar y Pegar");
+        setSize(350, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setLayout(new FlowLayout(FlowLayout.LEFT,10,20));
+        
+        
+}
+    
+    public static void main(String[] args) {
+        CopiarPegar ventana=new CopiarPegar();
+        ventana.setVisible(true);
+        
+
+    }
+
+}
